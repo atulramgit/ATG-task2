@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+*.env
+
+# Node / Serverless
+node_modules/
+.npm/
+.npmrc
+package-lock.json
+yarn.lock
+
+# Serverless deployment artifacts
+.serverless/
+.sls/
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Misc
+*.swp
+*.bak

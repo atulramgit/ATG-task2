@@ -1,0 +1,17 @@
+service: email-api
+
+provider:
+  name: aws
+  runtime: python3.9
+
+plugins:
+  - serverless-offline
+
+functions:
+  sendEmail:
+    handler: handler.send_email
+    events:
+      - http:
+          path: send
+          method: post
+          cors: true
