@@ -27,7 +27,6 @@ def send_email(event, context):
         msg["From"] = sender_email
         msg["To"] = receiver_email
 
-        # Send email using Gmail SMTP
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(sender_email, sender_pass)
             server.send_message(msg)
